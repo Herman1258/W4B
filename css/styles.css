@@ -91,12 +91,20 @@ header img {
     border-radius: 8px;
     padding: 30px 20px;
     margin-bottom: 30px;
+    flex: 1 1 300px;
 }
 
 .service-card img {
     height: 50px;
     width: auto;
     margin-bottom: 15px;
+}
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Keeps it responsive on mobile screens */
+    margin-top: 30px;
 }
 
 .service-card h3 {
