@@ -1,7 +1,20 @@
 /* ==========================================================================
    1. CORE BASE & MOBILE STYLES
    ========================================================================== */
-* {
+:root {
+  --dark-blue: #0084FF;
+  --light-blue: #B8DDFF;
+  --dark-green: #54C788;
+  --light-green: #CAF0DB;
+  --dark-red: #FF8A8A;
+  --light-red: #FFD2D2;
+  --dark-yellow: #FFC166;
+  --light-yellow: #FFE7C4;
+  --dark-purple: #9693E6;
+  --light-purple: #D5D4F5;
+  --dark-grey: #333333;
+}
+   * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -9,14 +22,14 @@
 
 body {
     font-family: 'PT Sans', sans-serif;
+    color: var(--dark-grey);
 }
 
 header {
-    background-color: #1a1a2e;
+    background-color: var(--dark-grey);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
 }
 
 .menu-btn {
@@ -31,7 +44,7 @@ header img {
 }
 
 .hero {
-    background-color: #1a1a2e;
+    background-color: var(--dark-purple);
     color: #ffffff;
     padding: 60px 20px;
     text-align: center;
@@ -52,8 +65,8 @@ header img {
 
 .cta-btn {
     display: inline-block;
-    background-color: #3498db;
-    color: #ffffff;
+    background-color: var(--dark-yellow);
+    color: var(--dark-grey);
     text-decoration: none;
     padding: 12px 30px;
     border-radius: 5px;
@@ -283,7 +296,7 @@ footer {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04); /* Richer premium shadow */
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-}
+
 
 .testimonial-card:hover {
     transform: translateY(-4px);
@@ -366,3 +379,7 @@ footer {
 .nav-links a:hover {
     color: #0284c7;        
 } 
+.logo-img {
+    max-width: 150px;
+    height: auto;
+}
