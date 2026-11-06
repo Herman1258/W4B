@@ -74,20 +74,20 @@ header img {
 }
 
 .services {
-    background-color: #ffffff;
+    background-color: var(--light-purple);
     padding: 60px 20px;
     text-align: center;
 }
 
 .services h2 {
-    color: #1a1a2e;
+    color: var(--dark-grey);
     font-size: 2rem;
     margin-bottom: 40px;
 }
 
 .service-card {
-    background: #f9f9fb;
-    border: 1px solid #e1e1e7;
+    background: #ffffff;
+    border: 1px solid var(--dark-grey);
     border-radius: 8px;
     padding: 30px 20px;
     margin-bottom: 30px;
