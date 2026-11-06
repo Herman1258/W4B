@@ -391,3 +391,100 @@ footer {
     max-width: 150px;
     height: auto;
 }
+/* ==========================================================================
+   2. COLORED ROWS SECTION (Top of Mockup)
+   ========================================================================== */
+.colored-rows-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.color-row {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    gap: 15px;
+}
+
+/* Row Palette Wiring */
+.row-pink { background-color: var(--light-red); }
+.row-yellow { background-color: var(--light-yellow); }
+.row-green { background-color: var(--light-green); }
+
+.row-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: var(--dark-grey);
+    border-radius: 50%;
+}
+
+.row-text {
+    font-weight: 700;
+    color: var(--dark-grey);
+}
+
+/* ==========================================================================
+   3. BLUE GRID SECTION (Middle of Mockup)
+   ========================================================================== */
+.blue-grid-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.grid-card {
+    background-color: var(--light-blue);
+    border: 2px solid var(--dark-blue);
+    border-radius: 6px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   4. MOCKUP FOOTER SECTION (Bottom of Mockup)
+   ========================================================================== */
+.mockup-footer {
+    background-color: var(--dark-blue);
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.testimonial-box {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.testimonial-avatar {
+    width: 50px;
+    height: 50px;
+    background-color: var(--dark-purple);
+    border-radius: 50%;
+}
+
+.footer-link {
+    color: var(--dark-yellow);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
