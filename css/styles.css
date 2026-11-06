@@ -269,14 +269,100 @@ footer {
         flex: 1 1 calc(33.333% - 20px);
     }
    .testimonials-grid {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
     }
 
     .testimonial-card {
-        flex: 1 1 calc(33.333% - 20px);
-        margin-bottom: 0;
-    } 
+    background: #ffffff !important; /* Forces the background to be solid white */
+    border: 1px solid #cbd5e1;     /* Darker, cleaner border color */
+    border-radius: 12px;
+    padding: 32px 24px;            /* More breathing room inside the card */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04); /* Richer premium shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+}
+
+.testimonial-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.05);
+}
+.testimonial-card img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+    border: 2px solid #e2e8f0;
+}
+
+.hero button, .btn-primary {
+    padding: 12px 28px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.hero button:hover, .btn-primary:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px);
+}
+.main-header {
+    width: 100%;
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 15px 5%;
+    display: flex !important; /* Forces the header container to stay active */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    height: 35px !important; /* Explicitly sizes the logo icon */
+    width: auto !important;
+    display: block !important;
+}
+
+.menu-btn {
+    display: block !important; /* Makes sure your hamburger button is visible */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+@media (min-width: 1024px) {
+    .menu-btn {
+        display: none !important;
+    }
+}
+.hero p {
+    max-width: 600px;
+    margin: 0 auto 24px auto; 
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #cbd5e1;           
+}
+  .logo-img {
+     height: 40px;
+      width: auto;
+      display: block;
+  }
+ .nav-links {
+    display: flex;
+    gap: 25px; 
+}
+
+.nav-links a {
+    text-decoration: none; 
+    color: #475569;        
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #0284c7;        
+} 
