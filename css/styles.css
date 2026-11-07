@@ -696,3 +696,269 @@ img {
         flex: 1;
     }
 }
+/* ==========================================================================
+   1. GLOBAL RESET & BRAND SETUP
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-color: #f2f5f9;
+    color: #333333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ==========================================================================
+   2. HERO AREA (Two Column Desktop Split)
+   ========================================================================== */
+.hero-section {
+    background-color: #2979ff;
+    color: #ffffff;
+    border-radius: 0 0 100px 0; /* Corner curve effect from design */
+    padding: 60px 40px;
+    margin-bottom: 40px;
+}
+
+.hero-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero-left {
+    flex: 1;
+}
+
+.hero-left h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-left p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.app-store-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #1565c0;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.app-store-btn img {
+    width: 22px;
+    margin-right: 12px;
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.phone-mockup {
+    max-width: 340px;
+}
+
+/* ==========================================================================
+   3. FOUR COLUMN CARD GRID
+   ========================================================================== */
+.features-grid-section {
+    max-width: 1100px;
+    margin: 0 auto 60px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.feature-card {
+    padding: 40px 30px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.03);
+}
+
+/* Precise card custom backgrounds from your screenshot */
+.header-card { background-color: #3bb393; color: #ffffff; }
+.color-pink { background-color: #f7ebeb; }
+.color-orange { background-color: #fbf0e3; }
+.color-blue { background-color: #e3f2fd; }
+
+.feature-card img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   4. STRATEGIC PLANNING SPLIT
+   ========================================================================== */
+.planning-development-section {
+    max-width: 1100px;
+    margin: 0 auto 60px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.planning-box {
+    background-color: #2979ff;
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    flex: 1;
+}
+
+.development-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    flex: 1;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* ==========================================================================
+   5. TESTIMONIALS WITH QUOTE WRAPPERS
+   ========================================================================== */
+.testimonials-section {
+    max-width: 1100px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
+
+.testimonials-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.testimonial-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+}
+
+.user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* ==========================================================================
+   6. NUMBERED BENEFITS GRID (3-Column Layout)
+   ========================================================================== */
+.benefits-section {
+    background-color: #2979ff;
+    color: #ffffff;
+    padding: 60px 40px;
+    margin: 0 -20px 60px -20px;
+    text-align: center;
+}
+
+.benefits-grid {
+    max-width: 1100px;
+    margin: 40px auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.benefit-card {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 35px 25px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.benefit-num {
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+/* ==========================================================================
+   7. ABOUT US PROFILE
+   ========================================================================== */
+.about-section {
+    max-width: 1100px;
+    margin: 0 auto 60px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* ==========================================================================
+   8. PRICING FOOTER CONTAINER
+   ========================================================================== */
+.pricing-cta-section {
+    background-color: #1a237e;
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 0 -20px -20px -20px;
+}
+
+.get-started-btn {
+    display: inline-block;
+    background-color: #ffca28;
+    color: #333333;
+    padding: 14px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 25px 0;
+}
+
+/* ==========================================================================
+   9. MEDIA QUERIES (DESKTOP ALIGNMENT LOOKUPS)
+   ========================================================================== */
+@media (min-width: 768px) {
+    .hero-container { flex-direction: row; }
+    .features-grid-section { grid-template-columns: repeat(2, 1fr); }
+    .planning-development-section { flex-direction: row; }
+    .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+    .about-section { flex-direction: row; }
+}
+
+@media (min-width: 1024px) {
+    .features-grid-section { grid-template-columns: repeat(4, 1fr); }
+    .benefits-grid { grid-template-columns: repeat(3, 1fr); }
+}
